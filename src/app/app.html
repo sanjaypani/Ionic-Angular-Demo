@@ -1,15 +1,15 @@
 <ion-menu [content]="content">
   <ion-header>
     <ion-toolbar>
-      <ion-title>Sample App</ion-title>
+      <ion-title>Sports Schedule</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <ion-content>
     <ion-list>
-      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
-        {{p.title}}
-      </button>
+      <ion-list-header>Navigate</ion-list-header>
+      <button menuClose ion-item (click)="goHome()">HOME</button>
+      <button menuClose ion-item (click)="goToTournaments()">Find Tournaments</button>
     </ion-list>
   </ion-content>
 
